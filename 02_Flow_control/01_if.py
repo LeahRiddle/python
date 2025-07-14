@@ -9,7 +9,7 @@ import os
 os.system("cls")
 
 
-## Sentencia simoke condicional
+## Sentencia simple condicional
 
 """
 age = 18
@@ -50,6 +50,7 @@ else:
  ## Operaores logicos
  # Condiciones multiples
 
+"""
 age = 23
 carnet = True
 
@@ -58,7 +59,7 @@ if age >= 18 and carnet:
 else:
     print("No conduzcas")
 
-
+"""
 ## otra condicion multiple, este es con OR
 
 
@@ -89,9 +90,12 @@ else:
     print("Ni eres suficiente para fumar droga, equide")
 """
 ##Esto es lo que recomienda hacer
+ 
+"""
+edad = 20
+money = True
 
-""""
-if edad > 18:
+if edad < 18:
     print("Bro, no puedes, klk contigo")
 elif money:
     print("Puedes solo porque tienes dinero")
@@ -119,3 +123,47 @@ elif edad >= 18:
 else:
     print("No tienes ningun requisito, y esa loquera?")
 """
+
+### Esto no recuerdo como lo llamo, pero era para ver los numeros y el booleano juntos.
+
+num = 5
+if num: #True
+    print("El numero no es cero.")
+
+numero = 0
+if numero: #False
+    print("El numero es cero.")
+
+name = "Nani"
+if name: #True
+    print("El nombre no es vacio.")
+
+nombre = ""
+if nombre: #False
+    print("El nombre es vacio.")
+
+
+## Comparacion ==, asignacion =
+
+number = 8 # Asignacion
+number8 = number == 8  # Comparacion
+if number8:  # Comparacion
+    print("El numero es cinco.")
+
+
+## La condicion ternaria, es una forma  conisa de escribir un if-else en una sola linea.
+
+## [Codigo si cumple la condicion] if [condicion] else [codigo si no cumple la condicion]
+
+print("Por favor ingresar su edad")
+age = input()
+age = int(age)
+
+message = "Eres mayor de edad" if age >= 18 else "eres menor de edad."
+print(message)
+
+# tambien se puede hacer asi.
+print("Eres mayor de edad" if age >= 18 else "Eres menor de edad.")
+
+
+
