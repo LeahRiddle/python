@@ -4,7 +4,7 @@
 ###
 import os
 os.system("cls")
-# Ejercicio 1: Determinar el mayor de dos números
+print("Ejercicio 1: Determinar el mayor de dos números \n")
 # Pide al usuario que introduzca dos números y muestra un mensaje
 # indicando cuál es mayor o si son iguales
 
@@ -28,7 +28,7 @@ print("\n Gracias por usar el programa para determinar el mayor de dos números 
 
 print("--------------------------------------------")
 
-# Ejercicio 2: Calculadora simple
+print("\n Ejercicio 2: Calculadora simple")
 # Pide al usuario dos números y una operación (+, -, *, /)
 # Realiza la operación y muestra el resultado (maneja la división entre zero)
 
@@ -57,7 +57,7 @@ elif num1 or num2 == float:
 print("\n Gracias por usar el programa de calculadora simple :)")
 
 
-# Ejercicio 3: Año bisiesto
+print("\n Ejercicio 3: Año bisiesto")
 # Pide al usuario que introduzca un año y determina si es bisiesto.
 # Un año es bisiesto si es divisible por 4, excepto si es divisible por 100 pero no por 400.
 
@@ -77,7 +77,7 @@ print("\n Gracias por usar el programa para saber si el año es bisiesto :)")
 
 print("--------------------------------------------")
 
-# Ejercicio 4: Categorizar edades
+print("\n Ejercicio 4: Categorizar edades")
 # Pide al usuario que introduzca una edad y la clasifique en:
 # - Bebé (0-2 años)
 # - Niño (3-12 años)
