@@ -4,6 +4,7 @@
 ###
 import os
 os.system("cls")
+
 print("Ejercicio 1: Determinar el mayor de dos números \n")
 # Pide al usuario que introduzca dos números y muestra un mensaje
 # indicando cuál es mayor o si son iguales
