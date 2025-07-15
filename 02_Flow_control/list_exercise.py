@@ -1,4 +1,4 @@
-
+###
 ###
 print("EJERCICIOS")
 ###
@@ -58,8 +58,42 @@ print(lista[2])
 
 print("Ejercicio 6: Reversa parcial")
 # Dada una lista, invierte solo la primera mitad de la lista (utilizando slicing y concatenación).
-lista = [1, 2, 3, 4, 5, 6] #-> Resultado: [3, 2, 1, 4, 5, 6]
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
 mitad = len(lista) // 2
-primera_mitad = lista[:mitad][::-1]
-print(primera_mitad + lista[mitad:])
+mitad2 = lista[:mitad] [::-1] + lista[mitad:]
+
+print(mitad2) #-> Resultado: [3, 2, 1, 4, 5, 6]
+
+##################################3
+#este es un ejercicio de copilot
+#Invierte solo la segunda mitad de la lista y concaténala con la primera mitad sin invertir.
+
+print("\n ejercicio de copilot. \n")
+
+listaC = [5, 10, 15, 20, 25, 30, 35, 40]
+
+omitad = listaC[:4] + listaC[4:] [::-1] 
+
+
+print(omitad)
+
+
+###################################################
+# Otro ejercicio de copilot
+#Invierte solo los elementos de las posiciones impares (índices 1, 3, 5, 7, 9) y concaténalos con los elementos de las posiciones pares (índices 0, 2, 4, 6, 8) en su orden original.
+#El resultado debe ser una nueva lista con los pares primero y los impares invertidos.
+
+print("\n Otro ejercicio de copilot.")
+
+listaD = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+"""
+par = listaD[::2]
+impar = listaD[::-2]
+ """
+# Este se supone que era el codigo correcto para buscar el impar. 
+imparC = listaD[1::2][::-1]
+
+par, impar = listaD[::2], listaD[::-2]
+resultado = par + impar
+print(resultado)
