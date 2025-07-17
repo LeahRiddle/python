@@ -82,7 +82,7 @@ print(omitad)
 ###################################################
 # Otro ejercicio de copilot
 #Invierte solo los elementos de las posiciones impares (índices 1, 3, 5, 7, 9) y concaténalos con los elementos de las posiciones pares (índices 0, 2, 4, 6, 8) en su orden original.
-#El resultado debe ser una nueva lista con los pares primero y los impares invertidos.
+#El resultado debe ser una nueva lista con los pares prim   ero y los impares invertidos.
 
 print("\n Otro ejercicio de copilot.")
 
