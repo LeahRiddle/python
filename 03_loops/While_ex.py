@@ -117,28 +117,25 @@ print("\n ------------------------------------------------------- \n")
 
 ### REVISAAAAAR
 
-print("\n Ejercicio 6:")
+print('\n Ejercicio 6: Numeros primos. ')
+numero = 2
 try:
-    n = int(input("Por favor ingresar un numero entero positivo: "))
+    print('\n Por favor ingresar un numero entero positivo.')
+    n = int(input())
     
-    num5 = 2
-    while num5 <= n:
-        primo = True
+    while numero <= n:
         div = 2
-        while div * div <= num5:
-            if num5 % div == 0:
+        primo = True
+        while div * div <= n:
+            if numero % div == 0:
                 primo = False
-                break   
+                break
+
             div += 1
-            if primo:
-                print(num5)
-            else:
-                print('Este numero no es primo.')
+        if primo:
+            print(f'El numero primo de {n} es: {numero}')
 
-
-    num5 += 1
-
-
-
+        numero += 1
+       
 except:
-    print("Por favor, ingresa un número entero positivo. (¬_¬ )")
+    print("\n Por favor ingresar un numero que sea entero y positivo. ಠ_ಠ")
