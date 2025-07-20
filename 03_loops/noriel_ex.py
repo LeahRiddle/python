@@ -14,4 +14,37 @@ const usuarios = [
   { nombre: 'Sara', rol: 'user' }
 ];
 
+for t in range(1,20):
+    print(t)
+
+    usuarios = [
+    {"nombre": "Ana", "rol": "admin"},
+    {"nombre": "Luis", "rol": "user"},
+    {"nombre": "Carlos", "rol": "admin"},
+    {"nombre": "Sara", "rol": "user"}
+
+]
+a =  'admin'
 '''
+numeros = [5, 10, 3, 8]
+
+for t in numeros:
+    
+  
+    print(t)
+    
+
+
+
+
+
+
+
+
+
+   
+       
+
+
+
+
