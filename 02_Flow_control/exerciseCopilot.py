@@ -26,3 +26,6 @@ print("\n Por favor, ingresar la cantidad de dias que desea registrar.")
 dias = int(input())
 
 temperatura = []
+
+
+

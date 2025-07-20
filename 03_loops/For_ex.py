@@ -62,11 +62,11 @@ print("\nEjercicio 5: Contar palanras que empiezan por una letra.")
 palabrasn = ["casa", "arbol", "sol", "elefante", "luna", "coche"]
 contador = 0
 
-letra = input('\n Por favor ingresar una letra. ').lower()
+letras = input('\n Por favor ingresar una letra. ').lower()
 for l in palabrasn:
-    if l.lower().startswith(letra):
+    if l.lower().startswith(letras):
         contador += 1
-print(f'\n Esta es la cantidad de palabras que empiezan por la letra {letra}: {contador}')
+print(f'\n Esta es la cantidad de palabras que empiezan por la letra {letras}: {contador}')
 
 
 
