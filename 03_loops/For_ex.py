@@ -7,7 +7,7 @@ if system("clear") != 0: system("cls")
 
 # Ejercicio 1: Imprimir números pares
 # Imprime todos los números pares del 2 al 20 (inclusive) usando un bucle for.
-print("\nEjercicio 1: Imprimir numeros pares")
+print("\nEj ercicio 1: Imprimir numeros pares")
 lit = range(1,21)
 
 for par in lit:

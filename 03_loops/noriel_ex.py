@@ -103,7 +103,6 @@ for t in temperaturas:
     print(t)
 
 
-
    
        
 
