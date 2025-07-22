@@ -66,8 +66,8 @@ print(mult(2))'''
 # el valor es opcional, pero se lo puedes especificar.
 
 # Argumento por clave
-def describir_gente(nombre, edad, sexo):
-    print(f"Soy {nombre}, tengo {edad} de edad y me identifico como {sexo}")
+'''def describir_gente(nombre, edad, sexo):
+    print(f"Soy {nombre}, tengo {edad} de edad y me identifico como {sexo}")'''
 
 #parametro son posicionales.
 '''describir_gente("Ash", 17, "Hombre")
@@ -76,4 +76,29 @@ describir_gente(909, "Dino (ascco)", "una asquerosidad.")''' ## Maldito calvo as
 
 #Argumento por clave.
 # parametro nombrados
-describir_gente(sexo="Hombre", nombre="Ash", edad= 17)
+'''describir_gente(sexo="Hombre", nombre="Ash", edad= 17)'''
+
+
+# Argumentos de longitud de variable (*args) (Esto es para que en caso e que no sepamos cuantos parametros necesitamos pongamos eso, son iterables)
+'''def sum(*args):
+    suma = 0
+    for num in args:
+        suma += num
+    return suma
+
+print(sum(1, 2, 3, 4, 5))'''
+
+# Arguemento de clave-valor variable (**kwargs)
+def show_info(**kwargs):
+    for clave, valor in kwargs.items():
+        print(f"{clave}: {valor}")
+
+show_info(name = "Ash", edad = 17, estado = "Muerto💔", country = "Estados Unidos")
+
+print('\n')
+
+show_info(name = "Eiji", estado = "Vivo de achepa", is_happy = False, country = "Japon")
+
+print('\n')
+
+show_info(name = "Leanny", estado = "al borde del suicidio", ver_BF_again = "Never", edad = 18)
