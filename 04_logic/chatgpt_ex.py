@@ -92,7 +92,7 @@ else:
 '''
 
 ## OCTAVO EJERCICIO.
-'''print('\n Ejercicio 8: Eliminar elementos de un diccionario según condición')
+print('\n Ejercicio 8: Eliminar elementos de un diccionario según condición')
 inventario = {"manzanas": 10, "bananas": 0, "peras": 5, "naranjas": 0}
 lita = []
 
@@ -100,7 +100,36 @@ for n in inventario:
     if inventario[n] == 0:
         lita.append(n)
 
-    for a in lita:
-        if inventario[a] == 0: del inventario[a]
+for a in lita:
+    if inventario[a] == 0: del inventario[a]
 
-print(inventario)'''
+print(inventario)
+
+## NOVENO EJERCICIO.
+
+print('\n Ejercicio 9: Contar la frecuencia de palabras en una lista.')
+palabras = ["manzana", "pera", "manzana", "banana", "pera", "manzana"]
+a = {}
+for w in palabras:
+    if w in a:
+        a[w] += 1
+    else:
+        a[w] = 1
+print(a)
+
+## DECIMO EJERCICIO. POR FIN DIOS MIO GRACIAS, ESCUCHASTE MIS PLEGARIAS \(￣︶￣*\))
+
+print('\n Ejercicio 10: Combinar dos diccionarios sumando valores.')
+tienda1 = {"manzana": 10, "banana": 5, "pera": 7}
+tienda2 = {"banana": 3, "pera": 8, "naranja": 6}
+rt = {}
+for c, v in tienda1.items():
+    rt[c] = v
+
+for k2, v2 in tienda2.items():
+    if k2 in rt:
+        rt[k2] += v2
+    else:
+        rt[k2] = v2
+print(rt)
+        
