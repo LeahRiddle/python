@@ -29,31 +29,31 @@ def saludo():
 saludo()
 
 #Ejemplo de una funcion con parametro
-'''def saludar_a(nombre): #nombre = parametro
+def saludar_a(nombre): #nombre = parametro
     print(f'Sayonara, {nombre}')
 
-saludar_a("Eiji")''' # Eiji 💔 = argumento.
+saludar_a("Eiji")# Eiji 💔 = argumento.
 
 # El parametro es lo que acepta la funcion.
 # El argumento es lo que se le pasa a la funcion.
 ### Ash esta vivo y feliz mi gente (Ayuada💔, no es cierto.)
 
 # Funciones con mas parametros.
-'''def suma(a, e): #Ash y Eiji💔
+def suma(a, e): #Ash y Eiji💔
     sumar = a + e
-    return sumar'''
+    return sumar
 #Se puede hacer asi.
-'''r = suma(17, 17)
-print(r)'''
+r = suma(17, 17)
+print(r)
 
 #o asi.
 '''print(suma(17, 17))'''
 
 # Documentar las funciones con docstring.
 
-'''def resta(y, h): #Yoshiki y 'Hikaru' 💔
+def resta(y, h): #Yoshiki y 'Hikaru' 💔
     """Resta dos numeros y devuelve el resultado."""
-    return y - h'''
+    return y - h
 ## Se puede acceder a los comentarios usando __doc__
 '''print(resta.__doc__)'''
 
@@ -66,27 +66,27 @@ print(mult(2))'''
 # el valor es opcional, pero se lo puedes especificar.
 
 # Argumento por clave
-'''def describir_gente(nombre, edad, sexo):
-    print(f"Soy {nombre}, tengo {edad} de edad y me identifico como {sexo}")'''
+def describir_gente(nombre, edad, sexo):
+    print(f"Soy {nombre}, tengo {edad} de edad y me identifico como {sexo}")
 
 #parametro son posicionales.
-'''describir_gente("Ash", 17, "Hombre")
+describir_gente("Ash", 17, "Hombre")
 
-describir_gente(909, "Dino (ascco)", "una asquerosidad.")''' ## Maldito calvo asqueroso de mierda, tenias que morirte hijo de la gran puta pedofilo inservible.
+describir_gente(909, "Dino (ascco)", "una asquerosidad.") ## Maldito calvo asqueroso de mierda, tenias que morirte hijo de la gran puta pedofilo inservible.
 
 #Argumento por clave.
 # parametro nombrados
-'''describir_gente(sexo="Hombre", nombre="Ash", edad= 17)'''
+describir_gente(sexo="Hombre", nombre="Ash", edad= 17)
 
 
 # Argumentos de longitud de variable (*args) (Esto es para que en caso e que no sepamos cuantos parametros necesitamos pongamos eso, son iterables)
-'''def sum(*args):
+def sum(*args):
     suma = 0
     for num in args:
         suma += num
     return suma
 
-print(sum(1, 2, 3, 4, 5))'''
+print(sum(1, 2, 3, 4, 5))
 
 # Arguemento de clave-valor variable (**kwargs)
 def show_info(**kwargs):
