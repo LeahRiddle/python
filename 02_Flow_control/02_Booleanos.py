@@ -62,3 +62,4 @@ print("\nTabla de verdad NOT:")
 print("A     | not A")
 print("True  |", not True)  
 print("False |", not False)
+
