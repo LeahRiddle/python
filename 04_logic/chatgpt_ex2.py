@@ -154,6 +154,10 @@ for k, v in materias.items():
         new_dic[materia].append(k)     
 print(new_dic)
 
+
+
+
+
 # EJERCICIO 13.
 print('\n Ejercicio 13: Convertir un texto en estadísticas.')
 texto = "me gusta mucho programar porque programar es divertido"
@@ -176,3 +180,34 @@ resultado = {
        "frecuencia": frecencia,
 }
 print(resultado)
+
+## EJERCICIO 14.
+print('\n Ejercicio 14: Diccionario de edades.')
+nombres = ["Ana", "Luis", "Carlos"]
+edades = [20, 25, 22]
+
+r = dict(zip(nombres, edades))
+print(r)
+
+# EJERCICIO 15.
+print('\n Ejercicio 15: Filtrar personas mayores de edad.')
+edades = {"Ana": 17, "Luis": 21, "Carlos": 16, "María": 25}
+#📌 Objetivo: Crear un nuevo diccionario que solo contenga las personas mayores o iguales a 18 años.
+r = {}
+for k, v in edades.items():
+       if v >= 18:
+              r[k] = v
+print(r)
+
+## EJERCICIO 16.
+print('\n EJERCICIO 16: Agrupar palabras por su longitud.')
+palabras = ["sol", "luna", "estrella", "cielo", "mar", "nube", "universo"]
+dics = {}
+#📌 Objetivo:
+'''Dado un listado de palabras, agruparlas en un diccionario donde la clave sea la cantidad de letras y el valor sea una lista de palabras que tienen esa longitud.
+'''
+for l in palabras:
+       if len(l) not in dics:
+              dics[len(l)] = []
+       dics[len(l)].append(l)
+print(dics)
