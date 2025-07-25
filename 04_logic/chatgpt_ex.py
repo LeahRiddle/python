@@ -133,3 +133,4 @@ for k2, v2 in tienda2.items():
         rt[k2] = v2
 print(rt)
         
+
