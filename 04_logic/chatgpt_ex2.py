@@ -153,3 +153,26 @@ for k, v in materias.items():
             new_dic[materia] = []
         new_dic[materia].append(k)     
 print(new_dic)
+
+# EJERCICIO 13.
+print('\n Ejercicio 13: Convertir un texto en estadísticas.')
+texto = "me gusta mucho programar porque programar es divertido"
+maxp = ""
+frecencia = {}
+total_palabras = len(texto.split())
+
+for t in texto.split():
+       if len(maxp) <= len(t) : maxp = t
+
+       if t in frecencia:
+              frecencia[t] += 1
+       else:
+              frecencia[t] = 1
+            
+       
+resultado = {
+       "total_de_palabras": total_palabras,
+       "palabra_mas_larga": maxp,
+       "frecuencia": frecencia,
+}
+print(resultado)
