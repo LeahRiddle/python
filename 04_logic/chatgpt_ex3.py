@@ -51,3 +51,41 @@ for p in palabras:
         m = con
         pc = p
 print(f'La palabra con mas vocales es: {p}')
+
+## EJERCICIO 4.
+print('\n Ejercicio 4: Agrupar números por par o impar.')
+"""
+Objetivo:
+Crear un diccionario con dos claves: "pares" y "impares", y agrupar los números según su tipo.
+"""
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+dic = {"Par": [], "Impar": []}
+for n in numeros:
+    if n % 2 == 0:
+        dic["Par"].append(n)
+    else:
+        dic["Impar"].append(n)
+
+print(dic)
+
+'''## EJERCICIO 5.
+print('\n Ejercicio 5: Sumar valores por grupo.')
+"""
+]Objetivo:
+Dado un diccionario con ventas por mes y por persona, sumar el total de cada persona.
+"""
+ventas = {
+    "Juan": {"enero": 100, "febrero": 120, "marzo": 90},
+    "Ana": {"enero": 150, "febrero": 80, "marzo": 110},
+    "Pedro": {"enero": 200, "febrero": 50, "marzo": 70}
+}
+
+for k, v in ventas.items():'''
+
+## EJERCICIO 6.
+print('\n Ejercicio 6: Combinar dos listas en un diccionario.')
+nombres = ["Ana", "Luis"]
+edades = [20, 25]
+
+r = dict(zip(nombres, edades))
+print(r)
