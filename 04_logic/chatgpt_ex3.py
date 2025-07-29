@@ -68,7 +68,7 @@ for n in numeros:
 
 print(dic)
 
-'''## EJERCICIO 5.
+## EJERCICIO 5.
 print('\n Ejercicio 5: Sumar valores por grupo.')
 """
 ]Objetivo:
@@ -80,12 +80,58 @@ ventas = {
     "Pedro": {"enero": 200, "febrero": 50, "marzo": 70}
 }
 
-for k, v in ventas.items():'''
+dicw = {}
+for k, v in ventas.items():
+    t = 0
+    for q in v.values():
+         t += q
+    dicw[k] = t
+
+print(dicw)
+
 
 ## EJERCICIO 6.
-print('\n Ejercicio 6: Combinar dos listas en un diccionario.')
+print('\n Ejercicio 6: Diccionario de listas ordenadas.')
+#Objetivo:
+#Ordenar las listas de números dentro de un diccionario.
+datos = {
+    "a": [5, 3, 9, 1],
+    "b": [20, 11, 15],
+    "c": [7, 6, 8]
+}
+orden = {"orden": []}
+
+for k, v in datos.items():
+
+    v.sort()
+    orden["orden"].extend(v)
+print(orden)
+
+## EJERCICIO 7.
+print('\n Ejercicio 7: Combinar dos listas en un diccionario.')
 nombres = ["Ana", "Luis"]
 edades = [20, 25]
 
 r = dict(zip(nombres, edades))
 print(r)
+
+## EJERCICIO 8.
+print('\n Ejercicio 8: Combinar dos diccionarios')
+
+"""Objetivo:
+Unir dos diccionarios sumando los valores de claves repetidas. Si una clave solo está en uno, se mantiene."""
+dic1 = {"manzana": 2, "pera": 3, "mango": 1}
+dic2 = {"manzana": 4, "uva": 1, "mango": 5}
+dicR = {}
+for k, v in dic1.items(): dicR[k] = v
+    
+for k2, v2, in dic2.items():
+    if k2 in dicR:
+        dicR[k2] += v2
+    else:
+        dicR[k2] = v2
+print(dicR)
+
+
+## EJERCICIO 9.
+print('\n Ejercicio 9: ')
