@@ -134,4 +134,34 @@ print(dicR)
 
 
 ## EJERCICIO 9.
-print('\n Ejercicio 9: ')
+print('\n Ejercicio 9: Contar frecuencia de letras.')
+'''Objetivo:
+Contar cuántas veces aparece cada letra en una palabra dada.
+'''
+word = "banana"
+d = {}
+for w in word:
+    if w in d:
+        d[w] += 1
+    else:
+        d[w] = 1
+print(d)
+
+## EJERCICIO 10.
+print('\n Diccionario inverso.')
+'''Objetivo:
+Invertir las claves y valores de un diccionario.'''
+datos2 = {"a": 1, "b": 2, "c": 3}
+datofake = {}
+for k, v in datos2.items(): datofake[v] = k
+print(datofake)
+
+## EJERCICIO 11.
+print('\n Eliminar claves con valores repetidos.')
+'''Objetivo:
+Eliminar claves cuyos valores ya han aparecido en otra clave.'''
+claves = {"a": 1, "b": 2, "c": 1, "d": 3}
+
+'''for k, v in claves.items():
+   
+print(claves)'''
